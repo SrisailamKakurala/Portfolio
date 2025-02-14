@@ -1,8 +1,4 @@
-# Azure Blackfolio [Portfolio Template]
-
-**Azure Blackfolio** is a portfolio template focuses on Showcasing your skills | experiences | projects.
-
-**Theme:**  Azure & Black
+# Portfolio of Srisailam Kakurala
 
 ## How can I Run this code?
 
@@ -10,10 +6,10 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone https://github.com/SrisailamKakurala/azure-blackfolio.git
+git clone https://github.com/SrisailamKakurala/Portfolio.git
 
 # Step 2: Navigate to the project directory.
-cd azure-blackfolio
+cd Portfolio
 
 # Step 3: Install the necessary dependencies.
 npm i
@@ -26,10 +22,9 @@ npm run dev
 
 This project is built with .
 
-- Vite
 - TypeScript
 - React
-- shadcn-ui
+- radix-ui
 - Tailwind CSS
 
 # Leave a STAR 🌟
