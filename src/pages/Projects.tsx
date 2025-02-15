@@ -2,8 +2,17 @@
 import { motion } from "framer-motion";
 import { Github, Youtube, ExternalLink } from "lucide-react";
 import { projects } from "../constants/content";
+import { useEffect } from "react";
 
 const Projects = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, []);
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-20">
       <h1 className="text-3xl font-bold text-white mb-2">PROJECTS</h1>
@@ -22,33 +31,33 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover bg-black"
               />
               <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center gap-4">
-                <a
+                {project.links.github && <a
                   href={project.links.github}
                   className="text-white hover:text-primary transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Github className="w-6 h-6" />
-                </a>
-                <a
+                </a>}
+                {project.links.youtube && <a
                   href={project.links.youtube}
                   className="text-white hover:text-primary transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Youtube className="w-6 h-6" />
-                </a>
-                <a
-                  href={project.links.live}
+                </a>}
+                {project?.links?.live && <a
+                  href={project?.links?.live}
                   className="text-white hover:text-primary transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <ExternalLink className="w-6 h-6" />
-                </a>
+                </a>}
               </div>
             </div>
             <div className="p-6">

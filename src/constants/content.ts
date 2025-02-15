@@ -94,7 +94,7 @@ export const skills = {
   ],
   
   concepts: [
-    { name: "Data Structures and Algorithms (DSA)", image: "https://cdn-icons-png.flaticon.com/512/2103/2103658.png" },
+    { name: "DSA", image: "https://cdn-icons-png.flaticon.com/512/2103/2103658.png" },
     { name: "Systems Design", image: "https://cdn-icons-png.flaticon.com/512/2784/2784065.png" },
     { name: "Deep Learning", image: "https://cdn-icons-png.flaticon.com/512/8637/8637101.png" },
     { name: "Supervised ML", image: "https://cdn-icons-png.flaticon.com/512/2171/2171112.png" },
@@ -113,36 +113,162 @@ export const skills = {
 // Replace the Project images with it's Logos
 export const projects = [
   {
-    title: "Project One",
-    description: "A modern web application with real-time features",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-    tags: ["React", "Node.js", "MongoDB"],
+    title: "Bat Templates",
+    description: "open-source platform for professional .bat and .sh files for structured folder setups and kickstart project templates.",
+    image: "/logomobile.png",
+    tags: ["ReactJs", "Firebase", "Typescript", "AWS", "Tailwind", "Docker", "Zustand", "OAuth", "Webpack", "Github Actions"],
     links: {
-      github: "#",
+      github: "https://github.com/SrisailamKakurala/BatTemplates",
       youtube: "#",
-      live: "#"
+      live: "https://battemplates.in/"
     }
   },
   {
-    title: "Project Two",
-    description: "Full-stack e-commerce platform with payment integration",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    tags: ["Next.js", "Stripe", "PostgreSQL"],
+    title: "DWARF",
+    description: "A website that makes other websites. Inspired by v0.dev, Bolt.New, and Lovable.ai.",
+    image: "/DWARF.png",
+    tags: ["NextJs", "ConvexDB", "Typescript", "SandPack", "Tailwind", "Docker", "Gemini API", "Shadcn"],
     links: {
-      github: "#",
-      youtube: "#",
-      live: "#"
+      github: "https://github.com/SrisailamKakurala/DWARF",
+      youtube: "https://youtu.be/bnc1kA8nY9Y",
+      live: "https://dwarf-mu.vercel.app/"
     }
   },
   {
-    title: "Project Three",
-    description: "Mobile-first social media dashboard",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-    tags: ["React Native", "Firebase"],
+    title: "s3Locky",
+    description: "Website for secure cloud-based file storage service.",
+    image: "/s3locky.png",
+    tags: ["ReactJs", "Tailwind", "NodeJs", "MongoDB", "ExpressJs", "JWT", "AWSs3", "Multer"],
     links: {
-      github: "#",
+      github: "https://github.com/SrisailamKakurala/s3locky-server",
+      youtube: "https://youtu.be/tSKUP-_ewRI",
+      live: "https://s3locky.netlify.app/"
+    }
+  },
+  {
+    title: "e-Go Bus Management Site",
+    description: "Management Site for e-Go Bus Application.",
+    image: "/egobusmngmt.png",
+    tags: ["ReactJs", "Tailwind", "Firebase", "Lottie", "xlsx", "Firestore", "RDB"],
+    links: {
+      github: "https://github.com/SrisailamKakurala/eGO-Bus-management-site",
       youtube: "#",
-      live: "#"
+      live: "https://management-ego-bus.netlify.app//"
+    }
+  },
+  {
+    title: "Chess Game",
+    description: "Simple RealTime Chess Game",
+    image: "https://4kwallpapers.com/images/wallpapers/chessboard-amoled-2880x1800-16659.png",
+    tags: ["ejs", "Socket.io", "chessJs", "expressJs", "Tailwind"],
+    links: {
+      github: "https://github.com/SrisailamKakurala/chess_game",
+      youtube: "#",
+    }
+  },
+  {
+    title: "Tkrcet Telegram Attendance Bot",
+    description: "Total Users: 120+ as of Oct 2024",
+    image: "https://mrwallpaper.com/images/thumbnail/telegram-logo-black-background-9qk8oissqilyrnyp.webp",
+    tags: ["beautifulsoup4", "requests", "python-telegram-bot", "tabulate", "lxml", "Python", "asyncio", "Pandas"],
+    links: {
+      github: "https://github.com/SrisailamKakurala/ssl_telegram_attendanceBot",
+      youtube: "#",
+    }
+  },
+  {
+    title: "Notes4You",
+    description: "Website to Sell and Buy Pdf notes for 2 Rupees",
+    image: "/notes4you.png",
+    tags: ["ReactJs", "Tailwind", "NodeJs", "MongoDB", "ExpressJs", "Razorpay", "Multer"],
+    links: {
+      github: "https://github.com/SrisailamKakurala/UGNOTES-react",
+      youtube: "https://youtu.be/jUbV0qKIYQk",
+    }
+  },
+  {
+    title: "Video Calling App",
+    description: "Video Calling App made with WebRTC",
+    image: "https://antmedia.io/wp-content/uploads/2021/03/ant-media-webrtc-server-1.png",
+    tags: ["ReactJs", "Tailwind", "NodeJs", "MongoDB", "ExpressJs", "WebRTC", "Socket.io"],
+    links: {
+      github: "https://github.com/SrisailamKakurala/webRTC",
+    }
+  },
+  {
+    title: "c&p",
+    description: "Browser Extension for Color Picker and Palettes",
+    image: "https://cdn.prod.website-files.com/65974919959003b130806726/65ce7fa6205ede1a27e3120e_50.png",
+    tags: ["HTML", "Tailwind", "Javascript"],
+    links: {
+      github: "https://github.com/SrisailamKakurala/Browser-Extensions",
+      youtube: "#",
+    }
+  },
+  {
+    title: "Load Testing with Apache Jmeter",
+    description: "API Load/Performance Testing with Apache Jmeter and Docker",
+    image: "https://pflb.us/wp-content/uploads/2020/12/how-to-speed-up-jmeter-part-2-preview-1.png",
+    tags: ["Apache JMeter", "Docker", "XML", "API Performance Testing"],
+    links: {
+      github: "https://github.com/SrisailamKakurala/LoadTesting_JmeterDocker"
+    }
+  },
+  {
+    title: "Ochi",
+    description: "Clone of Ochi.design Landing Page",
+    image: "https://mir-s3-cdn-cf.behance.net/projects/404/b33b19173414983.Y3JvcCw0MTY3LDMyNTksMCw0NTM.png",
+    tags: ["ReactJs", "Tailwind", "Javascript", "GSAP", "LocomotiveJS"],
+    links: {
+      live: "https://ochissl.netlify.app/"
+    }
+  },
+  {
+    title: "ShoppingJeeny",
+    description: "E-Commerce website UI",
+    image: "/shoppingjeeny.jpg",
+    tags: ["ReactJs", "Tailwind", "Locomotive Scroll", "GSAP"],
+    links: {
+      youtube: "https://youtu.be/vv4LI8ickZU"
+    }
+  },
+  {
+    title: "Utility Hub UI Clone",
+    description: "Landing Page Clone of Utility Hub",
+    image: "https://utilitie.netlify.app/assets%20(1)/asset%202.jpeg",
+    tags: ["HTML", "Tailwind"],
+    links: {
+      live: "https://utilitie.netlify.app/"
+    }
+  },
+  {
+    title: "DateToSolve",
+    description: "Responsive Quiz Application",
+    image: "https://static.vecteezy.com/system/resources/thumbnails/053/226/138/small_2x/online-quiz-app-interface-with-question-marks-on-colorful-speech-bubbles-png.png",
+    tags: ["HTML", "Tailwind", "Javascript"],
+    links: {
+      live: "https://daretosolve.netlify.app/"
+    }
+  },
+  {
+    title: "Netflix Landing Page",
+    description: "Landing Page Clone of Netflix",
+    image: "https://www.bynder.com/transform/5b836d42-1c47-45ce-b590-d22475745d2b/netflix-new-n-icon.jpg?io=transform:fit,width:905,height:0&quality=75",
+    tags: ["HTML", "Tailwind"],
+    links: {
+      github: "https://github.com/SrisailamKakurala/NETFLIX-UI-CLONE",
+      youtube: "https://youtu.be/jUbV0qKIYQk",
+      live: "https://nutflixx.netlify.app/"
+    }
+  },
+  {
+    title: "Blogging Website",
+    description: "A Simple Website for Blogging (static)",
+    image: "/spectrum.png",
+    tags: ["HTML", "Tailwind"],
+    links: {
+      youtube: "https://youtu.be/AmmKqq4NUwI",
+      live: "https://blogong.netlify.app/"
     }
   },
   // More projects

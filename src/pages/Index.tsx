@@ -61,7 +61,6 @@ const Index = () => {
         </div>
       </section>
 
-
       {/* About Section */}
       <section className="mb-20">
         <h2 className="section-title">ABOUT ME</h2>
@@ -99,7 +98,7 @@ const Index = () => {
       <section className="mb-20">
       <h2 className="section-title mb-8">SKILLS</h2>
       <Tabs defaultValue={categories[0]} className="w-full">
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center md:mb-8 mb-12">
           <TabsList className={`grid ${tabListClass} gap-x-1 gap-y-2 max-w-3xl`}>
             {categories.map((category) => (
               <TabsTrigger 
@@ -141,7 +140,7 @@ const Index = () => {
           </TabsContent>
         ))}
       </Tabs>
-    </section>
+      </section>
 
       {/* Contact Section */}
       <section>
