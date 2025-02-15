@@ -1,9 +1,22 @@
-
+import React, { useMemo } from 'react';
 import { motion } from "framer-motion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { personalInfo, experiences, skills } from "../constants/content";
 
 const Index = () => {
+  const categories = Object.keys(skills);
+
+  // Calculate tab width class based on number of categories
+  const tabListClass = useMemo(() => {
+    if (categories.length <= 4) {
+      return `grid-cols-${categories.length}`;
+    } else if (categories.length <= 6) {
+      return 'grid-cols-3 sm:grid-cols-6';
+    } else {
+      return 'grid-cols-4 sm:grid-cols-8';
+    }
+  }, [categories.length]);
+
   return (
     <div className="max-w-4xl mx-auto px-4 py-20">
       {/* Hero Section */}
@@ -12,7 +25,7 @@ const Index = () => {
           {/* Profile Picture */}
           <div className="w-60 h-60 rounded-full bg-gray-800 overflow-hidden">
             <img
-              src="https://imgs.search.brave.com/kkjAHkidBA3s2_m8mqCOXv-a5b_yN0xnx0ZbCCpFr-4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzMyLzQ1/LzYzLzMyNDU2MzY1/MWY2ZGNlMzEzZWIx/MjE5NjFhYzBiZTMx/LmpwZw"
+              src="/profile.jpg"
               alt="Profile"
               className="w-full h-full object-cover"
             />
@@ -84,38 +97,51 @@ const Index = () => {
 
       {/* Skills Section */}
       <section className="mb-20">
-        <h2 className="section-title">SKILLS</h2>
-        <Tabs defaultValue="languages" className="w-full">
-          <TabsList className="grid w-full grid-cols-4 mb-8">
-            <TabsTrigger value="languages">Languages</TabsTrigger>
-            <TabsTrigger value="frameworks">Frameworks</TabsTrigger>
-            <TabsTrigger value="tools">Tools</TabsTrigger>
-            <TabsTrigger value="devops">DevOps</TabsTrigger>
+      <h2 className="section-title mb-8">SKILLS</h2>
+      <Tabs defaultValue={categories[0]} className="w-full">
+        <div className="flex justify-center mb-8">
+          <TabsList className={`grid ${tabListClass} gap-x-1 gap-y-2 max-w-3xl`}>
+            {categories.map((category) => (
+              <TabsTrigger 
+                key={category} 
+                value={category}
+                className="px-3 py-1.5 text-sm text-center capitalize"
+              >
+                {category}
+              </TabsTrigger>
+            ))}
           </TabsList>
-          {Object.entries(skills).map(([category, items]) => (
-            <TabsContent key={category} value={category}>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                {items.map((skill, index) => (
-                  <motion.div
-                    key={skill.name}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: index * 0.05 }}
-                    className="glass-card p-4 flex items-center gap-3"
-                  >
+        </div>
+        
+        {categories.map((category) => (
+          <TabsContent key={category} value={category}>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+              {skills[category].map((skill, index) => (
+                <motion.div
+                  key={skill.name}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: index * 0.05 }}
+                  className="glass-card p-4 flex items-center gap-3 h-16"
+                >
+                  <div className="flex-shrink-0 w-8 h-8 flex items-center justify-center">
                     <img
                       src={skill.image}
                       alt={skill.name}
-                      className="w-8 h-8 object-contain"
+                      className="max-w-full max-h-full object-contain"
+                      onError={(e) => {
+                        e.currentTarget.src = "https://cdn-icons-png.flaticon.com/512/4406/4406234.png";  // Fallback image
+                      }}
                     />
-                    <span className="text-gray-300">{skill.name}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </TabsContent>
-          ))}
-        </Tabs>
-      </section>
+                  </div>
+                  <span className="text-gray-300 text-sm leading-tight">{skill.name}</span>
+                </motion.div>
+              ))}
+            </div>
+          </TabsContent>
+        ))}
+      </Tabs>
+    </section>
 
       {/* Contact Section */}
       <section>

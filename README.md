@@ -24,7 +24,7 @@ This project is built with .
 
 - TypeScript
 - React
-- radix-ui
+- shadcn-ui
 - Tailwind CSS
 
 # Leave a STAR 🌟
