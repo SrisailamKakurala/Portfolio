@@ -112,6 +112,8 @@ export const skills = {
 
 // Replace the Project images with it's Logos
 export const projects = [
+
+  // High tier projects
   {
     title: "Bat Templates",
     description: "open-source platform for professional .bat and .sh files for structured folder setups and kickstart project templates.",
@@ -206,6 +208,9 @@ export const projects = [
       github: "https://github.com/SrisailamKakurala/webRTC",
     }
   },
+
+
+  // Mid tier projects
   {
     title: "URL Shortener",
     description: "url shortener service inspired by Bitly",
@@ -236,6 +241,11 @@ export const projects = [
       github: "https://github.com/SrisailamKakurala/LoadTesting_JmeterDocker"
     }
   },
+
+
+
+
+  // Low tier Projects
   {
     title: "Ochi",
     description: "Clone of Ochi.design Landing Page",
