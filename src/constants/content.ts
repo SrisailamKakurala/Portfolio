@@ -121,8 +121,8 @@ export const projects = [
     tags: ["ReactJs", "Firebase", "Typescript", "AWS", "Tailwind", "Docker", "Zustand", "OAuth", "Webpack", "Github Actions"],
     links: {
       github: "https://github.com/SrisailamKakurala/BatTemplates",
-      youtube: "#",
-      live: "https://battemplates.in/"
+      youtube: "https://youtu.be/Z9youaRHotI",
+      live: "https://battemplates.netlify.app/"
     }
   },
   {
