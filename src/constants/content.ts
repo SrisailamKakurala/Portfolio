@@ -155,7 +155,7 @@ export const projects = [
     links: {
       github: "https://github.com/krisnachaitanya/e-Go-Bus",
       youtube: "#",
-      live: "#"
+      live: "https://e-gobus-website.vercel.app/"
     }
   },
   {
@@ -186,7 +186,7 @@ export const projects = [
     tags: ["beautifulsoup4", "requests", "python-telegram-bot", "tabulate", "lxml", "Python", "asyncio", "Pandas"],
     links: {
       github: "https://github.com/SrisailamKakurala/ssl_telegram_attendanceBot",
-      youtube: "#",
+      youtube: "https://youtu.be/Izxy5XVxoUk",
     }
   },
   {
