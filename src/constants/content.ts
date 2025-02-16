@@ -155,7 +155,7 @@ export const projects = [
     tags: ["React Native", "Tailwind", "Firebase", "Lottie", "xlsx", "Firestore", "RDB", "Expo", "Google Maps", "Cron Jobs"],
     links: {
       github: "https://github.com/krisnachaitanya/e-Go-Bus",
-      youtube: "#",
+      youtube: "https://youtu.be/w2eZMBFmNp0",
       live: "https://e-gobus-website.vercel.app/"
     }
   },
@@ -166,7 +166,7 @@ export const projects = [
     tags: ["ReactJs", "Tailwind", "Firebase", "Lottie", "xlsx", "Firestore", "RDB"],
     links: {
       github: "https://github.com/SrisailamKakurala/eGO-Bus-management-site",
-      youtube: "#",
+      youtube: "https://youtu.be/hBZHvN4_Log",
       live: "https://management-ego-bus.netlify.app//"
     }
   },
