@@ -146,6 +146,17 @@ export const projects = [
     }
   },
   {
+    title: "e-Go Bus",
+    description: "Native Application for Tracking School buses and notifying students .",
+    image: "/ego.png",
+    tags: ["React Native", "Tailwind", "Firebase", "Lottie", "xlsx", "Firestore", "RDB", "Expo", "Google Maps", "Cron Jobs"],
+    links: {
+      github: "https://github.com/krisnachaitanya/e-Go-Bus",
+      youtube: "#",
+      live: "#"
+    }
+  },
+  {
     title: "e-Go Bus Management Site",
     description: "Management Site for e-Go Bus Application.",
     image: "/egobusmngmt.png",
