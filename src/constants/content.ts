@@ -196,6 +196,17 @@ export const projects = [
     }
   },
   {
+    title: "URL Shortener",
+    description: "url shortener service inspired by Bitly",
+    image: "https://framerusercontent.com/images/6Xk8wBm0uCdioWKu0VZDNlZ2SSU.png",
+    tags: ["Ejs", "Tailwind", "NodeJs", "MongoDB", "ExpressJs", "Javascript"],
+    links: {
+      github: "https://github.com/SrisailamKakurala/url_shortener",
+      youtube: "https://youtu.be/V3WOPt08ND8",
+      live: "https://urlshortener-production-2f99.up.railway.app/"
+    }
+  },
+  {
     title: "c&p",
     description: "Browser Extension for Color Picker and Palettes",
     image: "https://cdn.prod.website-files.com/65974919959003b130806726/65ce7fa6205ede1a27e3120e_50.png",
