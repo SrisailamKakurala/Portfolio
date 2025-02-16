@@ -144,7 +144,8 @@ export const projects = [
     links: {
       github: "https://github.com/SrisailamKakurala/s3locky-server",
       youtube: "https://youtu.be/tSKUP-_ewRI",
-      live: "https://s3locky.netlify.app/"
+      // live: "https://s3locky.netlify.app/"
+      live: "https://www.linkedin.com/posts/srisailamkakurala_aws-s3-presignedurls-activity-7296547840397299714-L_k5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEOWSAYBNWIC4KzhbhJFhXGrMp4TtdDrvj0"
     }
   },
   {
