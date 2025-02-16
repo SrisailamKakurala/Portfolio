@@ -133,7 +133,7 @@ export const projects = [
     links: {
       github: "https://github.com/SrisailamKakurala/DWARF",
       youtube: "https://youtu.be/bnc1kA8nY9Y",
-      live: "https://dwarf-mu.vercel.app/"
+      live: "https://dwarf-production-6844.up.railway.app/"
     }
   },
   {
