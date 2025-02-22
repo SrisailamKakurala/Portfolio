@@ -122,7 +122,7 @@ export const projects = [
     links: {
       github: "https://github.com/SrisailamKakurala/BatTemplates",
       youtube: "https://youtu.be/Z9youaRHotI",
-      live: "https://battemplates.netlify.app/"
+      live: "https://battemplates.in"
     }
   },
   {
