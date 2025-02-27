@@ -85,8 +85,10 @@ export const skills = {
     { name: "Github Actions", image: "https://github.githubassets.com/images/modules/site/features/actions-icon-actions.svg" },
     { name: "Vim", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg" },
     { name: "Microsoft Excel", image: "/excel.png" },
-    { name: "Nightwatch.js", image: "https://nightwatchjs.org/img/logo-nightwatch.png" }
+    { name: "Nightwatch.js", image: "https://nightwatchjs.org/img/logo-nightwatch.png" },
+    { name: "Jira", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" }
   ],
+  
   
   cloud: [
     { name: "Amazon Web Services (AWS)", image: "https://logohistory.net/wp-content/uploads/2023/06/AWS-Emblem.png" },
