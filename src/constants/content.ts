@@ -56,7 +56,6 @@ export const skills = {
   libraries: [
     { name: "Redux.js", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
     { name: "JSON Web Token (JWT)", image: "https://jwt.io/img/pic_logo.svg" },
-    { name: "GraphQL", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" },
     { name: "Zustand", image: "/zustand.png" },
     { name: "Socket.io", image: "/socketio.png" },
     { name: "Mongoose ODM", image: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongoose/mongoose.png" },
@@ -67,32 +66,30 @@ export const skills = {
     { name: "Pywhatkit", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
     { name: "Pyttsx3", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
     { name: "GreenSock Animation Platform (GSAP)", image: "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" },
-    { name: "WebRTC", image: "https://webrtc.github.io/webrtc-org/assets/images/webrtc-logo-vert-retro-255x305.png" },
-    { name: "TensorFlow", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" }
+    { name: "TensorFlow", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+    { name: "Vitest", image: "https://vitest.dev/logo.svg" } // Added Vitest
   ],
+  
   
   databases: [
     { name: "MySQL", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
-    { name: "PostgreSQL", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
     { name: "Redis", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
     { name: "Firebase", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
     { name: "MongoDB", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" }
   ],
   
   tools: [
-    { name: "Git/Github", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+    { name: "Jira", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" },
     { name: "Docker", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
     { name: "Github Actions", image: "https://github.githubassets.com/images/modules/site/features/actions-icon-actions.svg" },
+    { name: "Git/Github", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
     { name: "Vim", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg" },
     { name: "Microsoft Excel", image: "/excel.png" },
-    { name: "Nightwatch.js", image: "https://nightwatchjs.org/img/logo-nightwatch.png" },
-    { name: "Jira", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" }
   ],
   
   
   cloud: [
     { name: "Amazon Web Services (AWS)", image: "https://logohistory.net/wp-content/uploads/2023/06/AWS-Emblem.png" },
-    { name: "Apache Kafka", image: "https://openwhisk.apache.org/images/icons/icon-kafka-white-trans-tall.png" }
   ],
   
   concepts: [
@@ -103,11 +100,19 @@ export const skills = {
     { name: "Operating Systems", image: "https://cdn-icons-png.flaticon.com/512/6134/6134028.png" },
     { name: "Database Management System (DBMS)", image: "/dbms.png" },
     { name: "Mobile Application Development", image: "https://cdn-icons-png.flaticon.com/512/2586/2586488.png" },
-    { name: "End-to-end Testing", image: "/testing.png" },
+    { name: "Unit Testing", image: "/testing.png" },
     { name: "HTML5 Canvas", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
     { name: "Application Programming Interfaces (API)", image: "https://cdn-icons-png.flaticon.com/512/8636/8636849.png" },
     { name: "Linux", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
     { name: "Accounting", image: "https://cdn-icons-png.flaticon.com/512/2666/2666163.png" }
+  ],
+
+  learning: [
+    { name: "WebRTC", image: "https://webrtc.github.io/webrtc-org/assets/images/webrtc-logo-vert-retro-255x305.png" },
+    { name: "PostgreSQL", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+    { name: "GraphQL", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" },
+    { name: "Apache Kafka", image: "https://openwhisk.apache.org/images/icons/icon-kafka-white-trans-tall.png" },
+    { name: "Prisma", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" }
   ]
 };
 
@@ -136,6 +141,17 @@ export const projects = [
       github: "https://github.com/SrisailamKakurala/DWARF",
       youtube: "https://youtu.be/bnc1kA8nY9Y",
       live: "https://dwarf-production-6844.up.railway.app/"
+    }
+  },
+  {
+    title: "DWARF-CLI",
+    description: "Ai Based npm Package that makes other websites, Apps, Packages, and APIs. etc.",
+    image: "/DWARF.png",
+    tags: ["CommanderJs", "Chalk", "Javascript", "NodeJs", "GitHub Actions"],
+    links: {
+      github: "https://github.com/SrisailamKakurala/dwarf-cli",
+      // youtube: "https://youtu.be/bnc1kA8nY9Y",
+      // live: "https://dwarf-production-6844.up.railway.app/"
     }
   },
   {
