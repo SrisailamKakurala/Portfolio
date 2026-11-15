@@ -25,7 +25,7 @@ const Index = () => {
           {/* Profile Picture */}
           <div className="w-60 h-60 rounded-full bg-gray-800 overflow-hidden">
             <img
-              src="/profile.jpg"
+              src="/profile.png"
               alt="Profile"
               className="w-full h-full object-cover"
             />
